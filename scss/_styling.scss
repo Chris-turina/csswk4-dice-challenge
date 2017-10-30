@@ -1,0 +1,21 @@
+body {
+  width: 1000px;
+  height: 150px;
+  background-color: black;
+}
+
+div:not(.column){
+  background-color: white;
+  border: 1px solid green;
+  margin: 5px;
+  padding: 10px;
+}
+
+
+.dot {
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+}

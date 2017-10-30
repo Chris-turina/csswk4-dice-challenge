@@ -1,0 +1,63 @@
+body {
+  display: flex;
+}
+
+div:not(.column){
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+div, .column {
+  display: flex;
+}
+
+.first-face {
+  justify-content: center;
+  align-items: center;
+  .dot {
+  }
+}
+
+.second-face {
+  justify-content: space-between;
+  .dot:nth-child(2) {
+    align-self: flex-end;
+  }
+}
+
+.third-face {
+  justify-content: space-between;
+  .dot:nth-child(2) {
+    align-self: center;
+  }
+  .dot:nth-child(3) {
+    align-self: flex-end;
+  }
+}
+
+.fourth-face {
+  justify-content: space-between;
+  flex-direction: column;
+  .column {
+    justify-content: space-between;
+  }
+}
+
+.fifth-face {
+  flex-direction: column;
+  justify-content: space-between;
+  .column {
+    justify-content: space-between;
+  }
+  .column:nth-child(2) {
+    justify-content: center;
+  }
+}
+
+.sixth-face {
+  justify-content: space-between;
+  .column {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

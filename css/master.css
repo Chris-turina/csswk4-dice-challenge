@@ -1,0 +1,65 @@
+body {
+  width: 1000px;
+  height: 150px;
+  background-color: black; }
+
+div:not(.column) {
+  background-color: white;
+  border: 1px solid green;
+  margin: 5px;
+  padding: 10px; }
+
+.dot {
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px; }
+
+body {
+  display: flex; }
+
+div:not(.column) {
+  flex-grow: 1;
+  flex-basis: 0; }
+
+div, .column {
+  display: flex; }
+
+.first-face {
+  justify-content: center;
+  align-items: center; }
+
+.second-face {
+  justify-content: space-between; }
+  .second-face .dot:nth-child(2) {
+    align-self: flex-end; }
+
+.third-face {
+  justify-content: space-between; }
+  .third-face .dot:nth-child(2) {
+    align-self: center; }
+  .third-face .dot:nth-child(3) {
+    align-self: flex-end; }
+
+.fourth-face {
+  justify-content: space-between;
+  flex-direction: column; }
+  .fourth-face .column {
+    justify-content: space-between; }
+
+.fifth-face {
+  flex-direction: column;
+  justify-content: space-between; }
+  .fifth-face .column {
+    justify-content: space-between; }
+  .fifth-face .column:nth-child(2) {
+    justify-content: center; }
+
+.sixth-face {
+  justify-content: space-between; }
+  .sixth-face .column {
+    flex-direction: column;
+    justify-content: space-between; }
+
+/*# sourceMappingURL=master.css.map */
